@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Radio Button Redirect</title>
+  <style>
+    button {
+      color: #1A91F0;
+      font-size: 50px; 
+      background-color: rgb(152, 241, 164);
+      color: rgb(15, 17, 19);
+      display: flex;
+      flex-direction: row;
+    }
+
+    img {
+      width: 200px; /* Set the desired width */
+      height: 300px; /* Maintain aspect ratio */
+      margin-right: 10px; /* Add margin between images */
+      margin-bottom: 10px; /* Add margin between rows */
+    }
+
+    /* Add any additional styles here */
+
+    /* Position images horizontally for the first three */
+    #imageGroup1 {
+      display: flex;
+      flex-direction: row;
+    }
+
+    /* Position images horizontally for the last two */
+    #imageGroup2 {
+      display: flex;
+      flex-direction: row;
+    }
+
+    /* Position both groups vertically */
+    #redirectForm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="tbp bg-white">
+    <div class="container">
+      <div class="tbp-content">
+        <div class="brand-and-toggler">
+          <a href="index.html" class="tbp-brand">
+            <span class="tbp-brand-text">RESUME<span> BUILDER...</span></span>
+          </a>
+          <button type="button" class="tbp-toggler-btn">
+            <div class="bars">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <h2>Select a template to go:</h2>
+  <div id="redirectForm">
+    <div id="imageGroup1">
+      <a href="resume.html"><img src="template1.jpg" alt="Template 1"></a>
+      <a href="resume2.html"><img src="template2.jpg" alt="Template 2"></a>
+      <a href="resume3.html"><img src="template3.jpg" alt="Template 3"></a>
+    </div>
+    
+    <div id="imageGroup2">
+      <a href="resume4.html"><img src="template4.jpg" alt="Template 4"></a>
+      <a href="resume5.html"><img src="template5.jpg" alt="Template 5"></a>
+    </div>
+  </div>
+</body>
+</html>
